@@ -1,8 +1,8 @@
 import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
-import path from "path";
 import { v2 as cloudinary } from "cloudinary";
+import path from "path";
 import { fileURLToPath } from "url";
 
 dotenv.config();
@@ -16,9 +16,12 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// Statik frontend dosyaları
+// Statik dosyaları sun
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+console.log(__dirname)
+console.log(__filename);
+
 app.use(express.static(path.join(__dirname, "public")));
 
 // Galeri endpointi
