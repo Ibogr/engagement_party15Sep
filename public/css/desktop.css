@@ -1,0 +1,356 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Crimson Text', sans-serif;
+    background-color: #FAF7F0;
+    color: #4A4947;
+    font-size: 28px;
+    background: url(" ../images/flower1.png"), url(" ../images/flower2.png"), url(" ../images/flower3.png");
+    background-size: 800px 800px;
+    background-position: top center, right center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    background-color: rgba(250, 247, 240, 70%);
+    background-blend-mode: lighten;
+}
+
+
+h1,
+h2 {
+    color: #b17457;
+    font-family: "Yeseva One", serif;
+}
+
+h1 {
+    font-size: 108px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+button {
+    background-color: #b17457;
+    color: #F0E9D7;
+    font-size: 20px;
+    font-family: 'Crimson Text', sans-serif;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.container {
+    padding: 2% 15%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Yeseva One", serif;
+}
+
+
+.and {
+    font-size: 200px;
+    position: absolute;
+    margin: -130px 170px;
+    color: #b17457;
+    z-index: 1;
+}
+
+.names {
+    position: relative;
+    font-family: "Allura", serif;
+    font-size: 100px;
+    margin: 10px 0;
+    color: #4a4947;
+    z-index: 2;
+}
+
+.names.Furkan {
+    padding: 0px 120px;
+    margin-top: -30px;
+    margin-left: 120px;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 40px;
+    color: #b17457;
+}
+
+.header-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: rotate(35deg);
+}
+
+/* Quote */
+.quote {
+    background-color: rgba(177, 116, 87, 30%);
+}
+
+
+cite p {
+    text-align: right;
+}
+
+
+/* Info & Countdown Side by Side */
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info {
+    flex-direction: column;
+    flex: 1;
+}
+
+.info h2 {
+    margin-bottom: 5px;
+}
+
+.info p {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.countdown-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #f7d9c4;
+    background: radial-gradient(ellipse at center, rgba(177, 116, 87, 70%), transparent 70%);
+    /* padding: 20px; */
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-shadow: #f7d9c4 1px 1px;
+
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.timeStamp {
+    margin: 0px 30px 0px 30px;
+    font-size: 40px;
+}
+
+.cntDown {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeName {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Form */
+.form-section {
+    background-color: rgba(177, 116, 87, 30%);
+    padding: 20px;
+}
+
+.form-section h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: 'Crimson Text';
+    font-size: 20px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.radio-group input {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+/* Contact */
+
+.contact {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 50%;
+    margin: 0% 0% 5% 0%;
+    text-align: center;
+}
+
+.contact-info {
+    justify-items: center;
+    text-align: center;
+}
+
+.contact>.contacts {
+    text-align: center;
+    margin: 0;
+}
+
+.contacts p {
+    margin: 0;
+}
+
+
+/* QR code */
+/* photo button */
+.qr {
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+    margin-bottom: 200px;
+    gap: 10px;
+}
+
+#uploadBtn {
+    display: none;
+}
+
+#gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 10px 30px;
+    grid-template-columns: repeat(3, 1rf);
+}
+
+.gallery-btn {
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+
+@media (max-width: 750px) {
+
+    .contact {
+        font-size: large;
+        grid-template-columns: 1fr;
+    }
+
+
+    #uploadBtn {
+        display: inline;
+    }
+
+    .radio-group {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    label {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container .lead {
+        font-size: large;
+    }
+
+    .container>h1 {
+
+        text-align: left;
+        font-size: 50px;
+
+    }
+
+    .header {
+        display: block;
+    }
+
+    .names {
+        font-size: 70px;
+    }
+
+    .names.Furkan {
+        font-size: 70px;
+        margin: 0;
+    }
+
+    .and {
+        padding-top: 60px;
+        font-size: 100px;
+        margin-left: 110px;
+    }
+
+    .name {
+        width: 30px;
+    }
+
+    .dateTime {
+        width: 300px;
+    }
+
+    input {}
+
+    .tire {
+        margin: 90px;
+    }
+
+    .info {
+        font-size: large;
+    }
+
+    #countdown {
+        width: 300px;
+    }
+
+    form {
+        width: 100%;
+        margin: 0;
+    }
+
+    input[type="text"] {
+        padding: 9px;
+        margin: 0;
+        font-size: 15px;
+    }
+
+
+}

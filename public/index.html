@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Nişan Davetiyesi</title>
+    <!-- link -->
+<link rel="stylesheet" href="/css/desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Crimson+Text&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+
+<body>
+    <section class="qr">
+        <!-- Gizli input, kamera açmak için -->
+        <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display: none;" />
+
+        <!-- Kamera ikonlu özel buton -->
+        <button id="uploadBtn">📷</button>
+
+        <!-- Galeri butonu -->
+        <button><a class="gallery-btn" href="gallery.html">Gallery</a></button>
+
+    </section>
+    <div class="container">
+        <h1>Nişan törenimiz</h1>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-text">
+                <div class="name">
+                    <p class="names">Begüm</p>
+                    <span class="and">&</span>
+                    <p class="names Furkan">Furkan</p>
+                </div>
+                <div class="dateTime">
+                    <p class="date">20 Eylül 2025 <span class="tire">-</span> Saat 14:00</p>
+                </div>
+            </div>
+            <div class="header-img">
+                <img src="/backend/public/images/begum_and_furkan.jpeg" alt="Begüm & Furkan">
+            </div>
+        </header>
+    </div>
+
+    <div class="quote">
+        <div class="container">
+            <blockquote>
+                <p class="lead">Birlikte çıktığımız bu güzel yolculuğun ilk adımında sevdiklerimizin yanımızda olmasını
+                    dileriz.
+                    Hayatlarımızı birleştirmeye karar verdiğimiz bu özel günde, heyecanımızı ve mutluluğumuzu sizinle
+                    paylaşmak istiyoruz. Nişan törenimize katılmanızdan büyük mutluluk duyarız.
+                </p>
+                <cite>
+                    <p class="lead">With love, <br>Begum & Furkan</p>
+                </cite>
+            </blockquote>
+        </div>
+    </div>
+
+    <!-- Info + Countdown -->
+    <div class="container">
+        <section class="info-section">
+            <section class="info">
+                <h2>Tarih:</h2>
+                <p><time datetime="2025-09-20">20 Eylül 2025</time></p>
+                <h2>Saat:</h2>
+                <p><time datetime="14:00:00">14:00</time></p>
+                <address>
+                    <h2>Adres:</h2>
+                    <p>1. Murat,</p>
+                    <p> 4. Sk.,22030 </p>
+                    <p>Merkez/Edirne</p>
+                    <p>Avcılar Restoran</p>
+                    <a href="https://www.google.com/maps/place/Avc%C4%B1lar+Restoran/@41.664188,26.5767151,17z/data=!3m1!4b1!4m6!3m5!1s0x14b32f8c22ecfde7:0x1bf129ec873e208!8m2!3d41.664184!4d26.57929!16s%2Fg%2F11b7q6ttbp?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D "
+                        target="_blank"><button>Google
+                            Maps'te
+                            Aç</button></a>
+                </address>
+            </section>
+            <section class="countdown-box" id="countdown">
+                <h2>Görüşmeye</h2>
+                <div class="timer">
+                    <div class="cntDown">
+                        <p class="timeStamp" id="day">XX</p>
+                        <p class="timeName">gün</p>
+                    </div>
+                    <p>:</p>
+                    <div class="cntDown">
+                        <p class="timeStamp" id="hour">XX</p>
+                        <p class="timeName">saat</p>
+                    </div>
+                    <p>:</p>
+                    <div class="cntDown">
+                        <p class="timeStamp" id="min">XX</p>
+                        <p class="timeName">dakika</p>
+                    </div>
+                    <p>:</p>
+                    <div class="cntDown">
+                        <p class="timeStamp" id="sec">XX</p>
+                        <p class="timeName">saniye</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <!-- Form -->
+
+    <section class="form-section">
+        <div class="container">
+            <h2>Katılım Formu</h2>
+            <form action="https://formspree.io/f/xyzpkwno" method="POST">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your first name">
+
+                <label for="surname">Soyadınız:</label>
+                <input type="text" id="surname" name="surname" required placeholder="Enter your first name">
+
+                <label for="countOfPeople">Kaç kişi olacaksınız?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="countOfPeople" value="1"> 1</label>
+                    <label><input type="radio" name="countOfPeople" value="2"> 2</label>
+                    <label><input type="radio" name="countOfPeople" value="3"> 3</label>
+                </div>
+
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact-info">
+        <h2>İletişim:</h2>
+        <div class="contact">
+            <div class="contacts">
+                <p>Begüm Gürses</p>
+                <p>
+                <address>+90 545 336 71 13</address>
+                </p>
+            </div>
+
+            <div class="contacts">
+                <p>Furkan Berber</p>
+                <p>
+                <address>+90 (555) 555-555</address>
+                </p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- Countdown JS -->
+<script src="/timer.js" charset="utf-8"></script>
+
+
+</body>
+
+</html>
