@@ -43,7 +43,9 @@ cameraInput.addEventListener("change", async (event) => {
 // Sayfa açılır açılmaz Cloudinary’den fotoğrafları getirip göster
 async function loadGallery() {
   try {
-    const res = await fetch("http://localhost:3000/gallery");
+    // Render URL’in
+    const res = await fetch("/gallery");
+
     console.log(".res.", res, "res");
     if (!res.ok) throw new Error("Backend'den veri alınamadı");
 
