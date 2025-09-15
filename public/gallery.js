@@ -67,7 +67,7 @@ function addImageToGallery(ur) {
   const img = document.createElement("img");
   console.log(img);
   img.src = ur;
-  img.style.width = "400px";
+  img.style.width = "300px";
   img.style.height = "auto";
 
   img.style.margin = "10px";
